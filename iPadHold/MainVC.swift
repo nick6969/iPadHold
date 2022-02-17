@@ -47,7 +47,23 @@ final class MainVC: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-    
+        
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        func fixPopoverCenterIssue() {
+            if let popoverPresentationController = self.presentedViewController?.popoverPresentationController,
+               popoverPresentationController.permittedArrowDirections == .init(rawValue: 0),
+               let sourceBounds: CGRect = popoverPresentationController.sourceView?.bounds {
+                popoverPresentationController.sourceRect = sourceBounds
+            }
+        }
+        
+        coordinator.animate { _ in
+            fixPopoverCenterIssue()
+        }
+    }
+
 }
 
 extension MainVC {
