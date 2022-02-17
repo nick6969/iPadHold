@@ -15,6 +15,7 @@
 		01DE00FF27BDFDC1009D5EE9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE00FE27BDFDC1009D5EE9 /* MainVC.swift */; };
 		01DE010127BE0971009D5EE9 /* PopoverCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010027BE0971009D5EE9 /* PopoverCenterVC.swift */; };
 		01DE010327BE0986009D5EE9 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010227BE0986009D5EE9 /* UIViewControllerExtension.swift */; };
+		01DE010527BE0C46009D5EE9 /* PopoverKeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010427BE0C46009D5EE9 /* PopoverKeyboardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		01DE00FE27BDFDC1009D5EE9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		01DE010027BE0971009D5EE9 /* PopoverCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCenterVC.swift; sourceTree = "<group>"; };
 		01DE010227BE0986009D5EE9 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		01DE010427BE0C46009D5EE9 /* PopoverKeyboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverKeyboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				01DE00FE27BDFDC1009D5EE9 /* MainVC.swift */,
 				01DE010027BE0971009D5EE9 /* PopoverCenterVC.swift */,
 				01DE010227BE0986009D5EE9 /* UIViewControllerExtension.swift */,
+				01DE010427BE0C46009D5EE9 /* PopoverKeyboardVC.swift */,
 			);
 			path = iPadHold;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				01DE00FF27BDFDC1009D5EE9 /* MainVC.swift in Sources */,
 				01DE010327BE0986009D5EE9 /* UIViewControllerExtension.swift in Sources */,
 				01DE010127BE0971009D5EE9 /* PopoverCenterVC.swift in Sources */,
+				01DE010527BE0C46009D5EE9 /* PopoverKeyboardVC.swift in Sources */,
 				018E19E927BDF950006BDD5C /* AppDelegate.swift in Sources */,
 				018E19EB27BDF950006BDD5C /* SceneDelegate.swift in Sources */,
 			);

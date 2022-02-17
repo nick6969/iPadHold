@@ -12,6 +12,7 @@ enum TalkType: Int, CaseIterable {
     case actionSheetCrash
     case actionSheetCancelButtonDisappear
     case popoverCenterIssue
+    case popoverKeyboardSizeIssue
 }
 
 private extension TalkType {
@@ -25,6 +26,8 @@ private extension TalkType {
             return "ActionSheet Cancel Button Disappear"
         case .popoverCenterIssue:
             return "Popover 置中轉向跑版"
+        case .popoverKeyboardSizeIssue:
+            return "Popover 鍵盤出現 大小變化"
         }
     }
 }
@@ -118,6 +121,8 @@ extension MainVC {
             present(alert, animated: true, completion: nil)
         case .popoverCenterIssue:
             showPopover(PopoverCenterVC(), size: CGSize(width: 200, height: 600), arch: view, direction: .init(rawValue: 0))
+        case .popoverKeyboardSizeIssue:
+            showPopover(PopoverKeyboardVC(), size: CGSize(width: 200, height: 600), arch: view, direction: .init(rawValue: 0))
         }
     }
 
