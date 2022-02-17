@@ -78,6 +78,8 @@ extension MainVC {
         case .actionSheetCrash:
             let alert: UIAlertController = UIAlertController(title: "Crash", message: "ActionSheet", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.popoverPresentationController?.sourceView = button
+            alert.popoverPresentationController?.sourceRect = button.bounds
             present(alert, animated: true, completion: nil)
         }
     }
