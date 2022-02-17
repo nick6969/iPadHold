@@ -10,6 +10,7 @@ import UIKit
 enum TalkType: Int, CaseIterable {
     case orientationSelected = 1000
     case actionSheetCrash
+    case actionSheetCancelButtonDisappear
 }
 
 private extension TalkType {
@@ -19,6 +20,8 @@ private extension TalkType {
             return "轉向方向設定不明確"
         case .actionSheetCrash:
             return "ActionSheet Crash"
+        case .actionSheetCancelButtonDisappear:
+            return "ActionSheet Cancel Button Disappear"
         }
     }
 }
@@ -56,10 +59,11 @@ extension MainVC {
 
     private func getButton(_ type: TalkType) -> UIButton {
         let button: UIButton = UIButton()
+        button.titleLabel?.numberOfLines = 0
         button.setTitle(type.title, for: .normal)
         button.addTarget(self, action: #selector(didTap(type:)), for: .touchUpInside)
         button.backgroundColor = .red
-        button.mLayChain(size: CGSize(width: 300, height: 100))
+        button.mLayChain(size: CGSize(width: 300, height: 80))
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 24
         button.tag = type.rawValue
@@ -78,6 +82,13 @@ extension MainVC {
         case .actionSheetCrash:
             let alert: UIAlertController = UIAlertController(title: "Crash", message: "ActionSheet", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.popoverPresentationController?.sourceView = button
+            alert.popoverPresentationController?.sourceRect = button.bounds
+            present(alert, animated: true, completion: nil)
+        case .actionSheetCancelButtonDisappear:
+            let alert: UIAlertController = UIAlertController(title: "Crash", message: "ActionSheet", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "I'm Cancel Button", style: .cancel, handler: nil))
             alert.popoverPresentationController?.sourceView = button
             alert.popoverPresentationController?.sourceRect = button.bounds
             present(alert, animated: true, completion: nil)
