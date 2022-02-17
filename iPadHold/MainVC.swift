@@ -40,7 +40,7 @@ final class MainVC: UIViewController {
     private lazy var stackView: UIStackView = {
         let stackView: UIStackView = UIStackView()
         stackView.axis = .vertical
-        stackView.alignment = .center
+        stackView.alignment = .fill
         stackView.spacing = 20
         stackView.distribution = .fillEqually
         for type in TalkType.allCases {
@@ -88,7 +88,7 @@ extension MainVC {
         button.setTitle(type.title, for: .normal)
         button.addTarget(self, action: #selector(didTap(type:)), for: .touchUpInside)
         button.backgroundColor = .red
-        button.mLayChain(size: CGSize(width: 300, height: 80))
+        button.mLayChain(.height, 80)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 24
         button.tag = type.rawValue
