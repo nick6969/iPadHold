@@ -9,6 +9,7 @@ import UIKit
 
 enum TalkType: Int, CaseIterable {
     case orientationSelected = 1000
+    case actionSheetCrash
 }
 
 private extension TalkType {
@@ -16,6 +17,8 @@ private extension TalkType {
         switch self {
         case .orientationSelected:
             return "轉向方向設定不明確"
+        case .actionSheetCrash:
+            return "ActionSheet Crash"
         }
     }
 }
@@ -72,6 +75,10 @@ extension MainVC {
         guard let type = TalkType(rawValue: button.tag) else { return }
         switch type {
         case .orientationSelected: break
+        case .actionSheetCrash:
+            let alert: UIAlertController = UIAlertController(title: "Crash", message: "ActionSheet", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
     }
 
