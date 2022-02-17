@@ -78,7 +78,12 @@ extension MainVC {
     private func didTap(type button: UIButton) {
         guard let type = TalkType(rawValue: button.tag) else { return }
         switch type {
-        case .orientationSelected: break
+        case .orientationSelected:
+            let alert: UIAlertController = UIAlertController(title: "how to fix it.", message: "手工修改 project file and info.plist, XDD.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.popoverPresentationController?.sourceView = button
+            alert.popoverPresentationController?.sourceRect = button.bounds
+            present(alert, animated: true, completion: nil)
         case .actionSheetCrash:
             let alert: UIAlertController = UIAlertController(title: "Crash", message: "ActionSheet", preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
