@@ -12,6 +12,7 @@
 		018E19F227BDF951006BDD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018E19F127BDF951006BDD5C /* Assets.xcassets */; };
 		018E19F527BDF951006BDD5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018E19F327BDF951006BDD5C /* LaunchScreen.storyboard */; };
 		01DE00FD27BDFAF0009D5EE9 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE00FC27BDFAF0009D5EE9 /* UIView-Extension.swift */; };
+		01DE00FF27BDFDC1009D5EE9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE00FE27BDFDC1009D5EE9 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		018E19F427BDF951006BDD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		018E19F627BDF951006BDD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DE00FC27BDFAF0009D5EE9 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		01DE00FE27BDFDC1009D5EE9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				018E19F327BDF951006BDD5C /* LaunchScreen.storyboard */,
 				018E19F627BDF951006BDD5C /* Info.plist */,
 				01DE00FC27BDFAF0009D5EE9 /* UIView-Extension.swift */,
+				01DE00FE27BDFDC1009D5EE9 /* MainVC.swift */,
 			);
 			path = iPadHold;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DE00FD27BDFAF0009D5EE9 /* UIView-Extension.swift in Sources */,
+				01DE00FF27BDFDC1009D5EE9 /* MainVC.swift in Sources */,
 				018E19E927BDF950006BDD5C /* AppDelegate.swift in Sources */,
 				018E19EB27BDF950006BDD5C /* SceneDelegate.swift in Sources */,
 			);
