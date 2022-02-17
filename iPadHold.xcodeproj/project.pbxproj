@@ -16,6 +16,8 @@
 		01DE010127BE0971009D5EE9 /* PopoverCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010027BE0971009D5EE9 /* PopoverCenterVC.swift */; };
 		01DE010327BE0986009D5EE9 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010227BE0986009D5EE9 /* UIViewControllerExtension.swift */; };
 		01DE010527BE0C46009D5EE9 /* PopoverKeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010427BE0C46009D5EE9 /* PopoverKeyboardVC.swift */; };
+		01DE010727BE0FC8009D5EE9 /* IsPortraitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010627BE0FC8009D5EE9 /* IsPortraitVC.swift */; };
+		01DE010927BE112F009D5EE9 /* SystemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE010827BE112F009D5EE9 /* SystemInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		01DE010027BE0971009D5EE9 /* PopoverCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverCenterVC.swift; sourceTree = "<group>"; };
 		01DE010227BE0986009D5EE9 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		01DE010427BE0C46009D5EE9 /* PopoverKeyboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverKeyboardVC.swift; sourceTree = "<group>"; };
+		01DE010627BE0FC8009D5EE9 /* IsPortraitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPortraitVC.swift; sourceTree = "<group>"; };
+		01DE010827BE112F009D5EE9 /* SystemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				01DE010027BE0971009D5EE9 /* PopoverCenterVC.swift */,
 				01DE010227BE0986009D5EE9 /* UIViewControllerExtension.swift */,
 				01DE010427BE0C46009D5EE9 /* PopoverKeyboardVC.swift */,
+				01DE010627BE0FC8009D5EE9 /* IsPortraitVC.swift */,
+				01DE010827BE112F009D5EE9 /* SystemInfo.swift */,
 			);
 			path = iPadHold;
 			sourceTree = "<group>";
@@ -147,12 +153,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DE00FD27BDFAF0009D5EE9 /* UIView-Extension.swift in Sources */,
+				01DE010927BE112F009D5EE9 /* SystemInfo.swift in Sources */,
 				01DE00FF27BDFDC1009D5EE9 /* MainVC.swift in Sources */,
 				01DE010327BE0986009D5EE9 /* UIViewControllerExtension.swift in Sources */,
 				01DE010127BE0971009D5EE9 /* PopoverCenterVC.swift in Sources */,
 				01DE010527BE0C46009D5EE9 /* PopoverKeyboardVC.swift in Sources */,
 				018E19E927BDF950006BDD5C /* AppDelegate.swift in Sources */,
 				018E19EB27BDF950006BDD5C /* SceneDelegate.swift in Sources */,
+				01DE010727BE0FC8009D5EE9 /* IsPortraitVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ enum TalkType: Int, CaseIterable {
     case actionSheetCancelButtonDisappear
     case popoverCenterIssue
     case popoverKeyboardSizeIssue
+    case isPortrait
 }
 
 private extension TalkType {
@@ -28,6 +29,8 @@ private extension TalkType {
             return "Popover 置中轉向跑版"
         case .popoverKeyboardSizeIssue:
             return "Popover 鍵盤出現 大小變化"
+        case .isPortrait:
+            return "畫面是否是在 Portrait 樣式"
         }
     }
 }
@@ -123,6 +126,8 @@ extension MainVC {
             showPopover(PopoverCenterVC(), size: CGSize(width: 200, height: 600), arch: view, direction: .init(rawValue: 0))
         case .popoverKeyboardSizeIssue:
             showPopover(PopoverKeyboardVC(), size: CGSize(width: 200, height: 600), arch: view, direction: .init(rawValue: 0))
+        case .isPortrait:
+            navigationController?.pushViewController(IsPortraitVC(), animated: true)
         }
     }
 
