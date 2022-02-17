@@ -11,6 +11,7 @@ enum TalkType: Int, CaseIterable {
     case orientationSelected = 1000
     case actionSheetCrash
     case actionSheetCancelButtonDisappear
+    case popoverCenterIssue
 }
 
 private extension TalkType {
@@ -22,6 +23,8 @@ private extension TalkType {
             return "ActionSheet Crash"
         case .actionSheetCancelButtonDisappear:
             return "ActionSheet Cancel Button Disappear"
+        case .popoverCenterIssue:
+            return "Popover 置中轉向跑版"
         }
     }
 }
@@ -97,6 +100,8 @@ extension MainVC {
             alert.popoverPresentationController?.sourceView = button
             alert.popoverPresentationController?.sourceRect = button.bounds
             present(alert, animated: true, completion: nil)
+        case .popoverCenterIssue:
+            showPopover(PopoverCenterVC(), size: CGSize(width: 200, height: 600), arch: view, direction: .init(rawValue: 0))
         }
     }
 
